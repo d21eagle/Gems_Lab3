@@ -2,41 +2,49 @@
 
 public class CheckPoint
 {
-    private CheckPointStatistics statistics;
-    private static List<int> stolenNumbers;
-
-    /*
-    public CheckPointStatistics GetStatistics()
-    {
-        
-    }
-    */
-
     enum Colours { Red, Orange, Yellow, Green, LightBlue, Blue, Violet }
 
     enum BodyType { Car, Truck, Bus }
     
     enum HasPassenger { True, False }
 
-    public static void RegisterVehicle(Vehicle vehicle)
+    public static int RegisterVehicle(Vehicle vehicle)
     {
         if (vehicle.GetSpeed() > 110)
-            Console.Write("Превышение скорости!\n");
-
-        /*
-        Random r = new Random();
-        stolenNumbers.Add(r.Next(100, 1000));
+            return 1;
+        
+        // Заполнение списка угнанных машин 
+        
+        int fill = 100; // допустим, 100 номеров в розыске
+        List<int> stolenNumbers = new List<int>();
+        while (fill-- > 0)
+        {
+            Random r = new Random();
+            stolenNumbers.Add(r.Next(100, 1000));
+        }
 
         foreach (var item in stolenNumbers)
         {
             if (vehicle.GetLicensePlateNumber() == item)
-                Console.Write("Перехват!");
+                return 2;
         }
-        */
+
+        return 0;
     }
     
-    public static void VehicleGeneration()    
+    public static CheckPointStatistics GetStatistics()
     {
+        int carsCount = 0;
+        int trucksCount = 0;
+        int busesCount = 0;
+
+        int carSumSpeed = 0;
+        int truckSumSpeed = 0;
+        int busSumSpeed = 0;
+
+        int breakersCount = 0;
+        int jackersCount = 0;
+
         while (!Console.KeyAvailable)
         {
             // Генерация цветов
@@ -60,7 +68,18 @@ public class CheckPoint
                 int randNumber = new Random().Next(100, 1000);
                 Car car = new Car(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(car.ToString());
-                RegisterVehicle(car);
+                if (RegisterVehicle(car) == 1)
+                {
+                    Console.Write("Превышение скорости!\n");
+                    breakersCount++;
+                }
+                if (RegisterVehicle(car) == 2)
+                {
+                    Console.Write("Перехват!\n");
+                    jackersCount++;
+                }
+                carsCount++;
+                carSumSpeed += randSpeed;
             }
             
             if (randBodyType == BodyType.Truck)
@@ -69,7 +88,18 @@ public class CheckPoint
                 int randNumber = new Random().Next(100, 1000);
                 Truck truck = new Truck(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(truck.ToString());
-                RegisterVehicle(truck);
+                if (RegisterVehicle(truck) == 1)
+                {
+                    Console.Write("Превышение скорости!\n");
+                    breakersCount++;
+                }
+                if (RegisterVehicle(truck) == 2)
+                {
+                    Console.Write("Перехват!\n");
+                    jackersCount++;
+                }
+                trucksCount++;
+                truckSumSpeed += randSpeed;
             }
             
             if (randBodyType == BodyType.Bus)
@@ -78,12 +108,32 @@ public class CheckPoint
                 int randNumber = new Random().Next(100, 1000);
                 Bus bus = new Bus(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(bus.ToString());
-                RegisterVehicle(bus);
+                if (RegisterVehicle(bus) == 1)
+                {
+                    Console.Write("Превышение скорости!\n");
+                    breakersCount++;
+                }
+                if (RegisterVehicle(bus) == 2)
+                {
+                    Console.Write("Перехват!\n");
+                    jackersCount++;
+                }
+                busesCount++;
+                busSumSpeed += randSpeed;
             }
 
             Random r = new Random();
             Thread.Sleep(r.Next(500, 5001));
         }
+
+        int scoreSpeed = carSumSpeed + truckSumSpeed + busSumSpeed;
+        int scoreCount = carsCount + trucksCount + busesCount;
+        double avSpeed = (double)scoreSpeed / scoreCount;
+        avSpeed = Math.Round(avSpeed);
         
+        CheckPointStatistics stat = new CheckPointStatistics(carsCount, trucksCount, busesCount, 
+            breakersCount, jackersCount, avSpeed);
+
+        return stat;
     }
 }

@@ -24,6 +24,6 @@ public class Bus : Vehicle
     {
         return "Bus {" + Colour + ", " + BodyType + ", "
                + LicensePlateNumber + ", " + HasPassenger + ", "
-               + Speed + "}";
+               + Speed + "km/h" + "}";
     }
 }

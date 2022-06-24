@@ -24,6 +24,6 @@ public class Truck : Vehicle
     {
         return "Truck {" + Colour + ", " + BodyType + ", "
                + LicensePlateNumber + ", " + HasPassenger + ", "
-               + Speed + "}";
+               + Speed + "km/h" + "}";
     }
 }

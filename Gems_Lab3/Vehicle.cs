@@ -19,4 +19,5 @@ public class Vehicle
 
     public virtual int GetSpeed() => Speed;
     public virtual int GetLicensePlateNumber() => LicensePlateNumber;
+    
 }
