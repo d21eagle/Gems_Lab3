@@ -8,11 +8,8 @@ public class CheckPoint
     
     enum HasPassenger { True, False }
 
-    public static int RegisterVehicle(Vehicle vehicle)
+    public static int RegisterStolenVehicle(Vehicle vehicle)
     {
-        if (vehicle.GetSpeed() > 110)
-            return 1;
-        
         // Заполнение списка угнанных машин 
         
         int fill = 100; // допустим, 100 номеров в розыске
@@ -26,7 +23,7 @@ public class CheckPoint
         foreach (var item in stolenNumbers)
         {
             if (vehicle.GetLicensePlateNumber() == item)
-                return 2;
+                return 1;
         }
 
         return 0;
@@ -68,12 +65,12 @@ public class CheckPoint
                 int randNumber = new Random().Next(100, 1000);
                 Car car = new Car(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(car.ToString());
-                if (RegisterVehicle(car) == 1)
+                if (car.GetSpeed() > 110)
                 {
                     Console.Write("Превышение скорости!\n");
                     breakersCount++;
                 }
-                if (RegisterVehicle(car) == 2)
+                if (RegisterStolenVehicle(car) == 1)
                 {
                     Console.Write("Перехват!\n");
                     jackersCount++;
@@ -88,12 +85,12 @@ public class CheckPoint
                 int randNumber = new Random().Next(100, 1000);
                 Truck truck = new Truck(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(truck.ToString());
-                if (RegisterVehicle(truck) == 1)
+                if (truck.GetSpeed() > 110)
                 {
                     Console.Write("Превышение скорости!\n");
                     breakersCount++;
                 }
-                if (RegisterVehicle(truck) == 2)
+                if (RegisterStolenVehicle(truck) == 1)
                 {
                     Console.Write("Перехват!\n");
                     jackersCount++;
@@ -108,12 +105,12 @@ public class CheckPoint
                 int randNumber = new Random().Next(100, 1000);
                 Bus bus = new Bus(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(bus.ToString());
-                if (RegisterVehicle(bus) == 1)
+                if (bus.GetSpeed() > 110)
                 {
                     Console.Write("Превышение скорости!\n");
                     breakersCount++;
                 }
-                if (RegisterVehicle(bus) == 2)
+                if (RegisterStolenVehicle(bus) == 1)
                 {
                     Console.Write("Перехват!\n");
                     jackersCount++;
