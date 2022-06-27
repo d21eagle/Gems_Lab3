@@ -63,7 +63,7 @@ public class CheckPoint
             {
                 int randSpeed = new Random().Next(90, 151);
                 int randNumber = new Random().Next(100, 1000);
-                Car car = new Car(colour, bodyType, randNumber, hasPassenger, randSpeed);
+                Vehicle car = new Car(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(car.ToString());
                 if (car.GetSpeed() > 110)
                 {
@@ -83,7 +83,7 @@ public class CheckPoint
             {
                 int randSpeed = new Random().Next(70, 101);
                 int randNumber = new Random().Next(100, 1000);
-                Truck truck = new Truck(colour, bodyType, randNumber, hasPassenger, randSpeed);
+                Vehicle truck = new Truck(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(truck.ToString());
                 if (truck.GetSpeed() > 110)
                 {
@@ -103,7 +103,7 @@ public class CheckPoint
             {
                 int randSpeed = new Random().Next(80, 111);
                 int randNumber = new Random().Next(100, 1000);
-                Bus bus = new Bus(colour, bodyType, randNumber, hasPassenger, randSpeed);
+                Vehicle bus = new Bus(colour, bodyType, randNumber, hasPassenger, randSpeed);
                 Console.WriteLine(bus.ToString());
                 if (bus.GetSpeed() > 110)
                 {

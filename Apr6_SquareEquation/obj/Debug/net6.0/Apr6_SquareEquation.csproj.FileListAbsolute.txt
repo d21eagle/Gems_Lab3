@@ -1,0 +1,15 @@
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\bin\Debug\net6.0\Apr6_SquareEquation.exe
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\bin\Debug\net6.0\Apr6_SquareEquation.deps.json
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\bin\Debug\net6.0\Apr6_SquareEquation.runtimeconfig.json
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\bin\Debug\net6.0\Apr6_SquareEquation.dll
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\bin\Debug\net6.0\Apr6_SquareEquation.pdb
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.csproj.AssemblyReference.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.AssemblyInfoInputs.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.AssemblyInfo.cs
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.csproj.CoreCompileInputs.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.dll
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\refint\Apr6_SquareEquation.dll
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.pdb
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\Apr6_SquareEquation.genruntimeconfig.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Apr6_SquareEquation\obj\Debug\net6.0\ref\Apr6_SquareEquation.dll

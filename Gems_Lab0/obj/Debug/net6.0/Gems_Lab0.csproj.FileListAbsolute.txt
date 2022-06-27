@@ -1,0 +1,15 @@
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\bin\Debug\net6.0\Gems_Lab0.exe
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\bin\Debug\net6.0\Gems_Lab0.deps.json
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\bin\Debug\net6.0\Gems_Lab0.runtimeconfig.json
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\bin\Debug\net6.0\Gems_Lab0.dll
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\bin\Debug\net6.0\Gems_Lab0.pdb
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.csproj.AssemblyReference.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.AssemblyInfoInputs.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.AssemblyInfo.cs
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.csproj.CoreCompileInputs.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.dll
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\refint\Gems_Lab0.dll
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.pdb
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\Gems_Lab0.genruntimeconfig.cache
+C:\Users\Vlad Ilyashenko\RiderProjects\Gems_Lab3\Gems_Lab0\obj\Debug\net6.0\ref\Gems_Lab0.dll

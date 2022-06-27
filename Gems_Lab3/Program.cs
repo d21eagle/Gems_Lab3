@@ -7,7 +7,7 @@ class Program
     {
         Console.Write("\nЗапуск Контрольного Пункта..\n");
         CheckPointStatistics stat = CheckPoint.GetStatistics();
-        Console.Write(stat.ToString());
+        Console.Write(stat);
     }
 }
 

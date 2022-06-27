@@ -16,6 +16,18 @@ public class Vehicle
         HasPassenger = false;
         Speed = 0;
     }
+    
+    public Vehicle(string colour, string type, int number, bool hasPass, int speed)
+    {
+        if (number < 100 || number > 999)
+            throw new ArgumentException("Некорректный номер!");
+
+        Colour = colour;
+        BodyType = type;
+        LicensePlateNumber = number;
+        HasPassenger = hasPass;
+        Speed = speed;
+    }
 
     public virtual int GetSpeed() => Speed;
     public virtual int GetLicensePlateNumber() => LicensePlateNumber;
