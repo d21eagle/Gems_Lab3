@@ -30,4 +30,5 @@ public class CheckPointStatistics
                "Количество угонщиков: " + HijackersCount + ";\n" +
                "Средняя скорость автомобилей: " + AverageSpeed + ";\n";
     }
+    
 }

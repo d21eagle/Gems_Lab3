@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gems_Lab0", "Gems_Lab0\Gems
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gems_Lab1", "Gems_Lab1\Gems_Lab1.csproj", "{4FDAE0BB-4DAA-4C1B-BC2A-F846A7D10F64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apr6_SquareEquation", "Apr6_SquareEquation\Apr6_SquareEquation.csproj", "{410590B8-A9B0-4885-91CC-692113A45499}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEquation", "SquareEquation\SquareEquation.csproj", "{410590B8-A9B0-4885-91CC-692113A45499}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
