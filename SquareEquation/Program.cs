@@ -37,6 +37,10 @@ namespace Apr6_SquareEquation
                         {
                             Console.WriteLine(ex.Message);
                         }
+                        catch (IndexOutOfRangeException)
+                        {
+                            Console.WriteLine("Нет описания уравнений!");
+                        }
                         break;
                     
                     case 2:
