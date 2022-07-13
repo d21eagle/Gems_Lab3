@@ -14,10 +14,9 @@ namespace Apr6_SquareEquation
         public void Handle()
         {
             double[] coeffs = _recorder.Record();
-
-            if (coeffs.Equals(null))
-                throw new ArgumentException("Отсутствует описание уравнений!");
-
+            if (coeffs == null)
+                throw new IndexOutOfRangeException();
+            
             int counter = 3;
             var eqs = coeffs.GroupBy(_ => counter++ / 3).Select(v => v.ToArray());
                     
@@ -37,9 +36,9 @@ namespace Apr6_SquareEquation
                     }
                     Console.Write("\n");
                 } 
-                catch (ArgumentException) 
+                catch (ArgumentException ex) 
                 {
-                    Console.WriteLine("Нет корней!");
+                    Console.WriteLine(ex.Message);
                 }
             }
         }

@@ -16,31 +16,29 @@ namespace Apr6_SquareEquation.Recorders
         {
             int eqCount = 0;
             double[] coeffs;
-
-            do
-            {
-                Console.Write("Введите количество уравнений:\n");
-                eqCount = Convert.ToInt32(Console.ReadLine());
-            } while (eqCount <= 0);
+           
+            if (new FileInfo(_inputFileName).Length == 0 || !File.Exists(_inputFileName)) {
+                throw new FileNotFoundException("Файл пуст или не найден!");
+            } 
+            
+            // Количество уравнений в первой строке файла
+            eqCount = Convert.ToInt32(File.ReadLines(_inputFileName).First());
+            if (eqCount <= 0)
+                throw new ArgumentException("Не указано количество уравнений!");
             
             coeffs = new double[eqCount * 3];
             Console.Write("\n");
             
             StreamReader sr = new StreamReader(_inputFileName);
-            if (File.Exists(_inputFileName))
-            {
-                string text = sr.ReadToEnd();
-                sr.Close();
+            sr.ReadLine();
+            string text = sr.ReadToEnd();
+            sr.Close();
 
-                string[] contain = text.Split(' ');
+            string[] contain = text.Split(new char[] {' ', '\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
 
-                for (int i = 0; i < eqCount * 3; i++)
-                {
-                    coeffs[i] = Double.Parse(contain[i]);
-                }
-            }
-            else throw new FileNotFoundException();
-            
+            for (int i = 0; i < eqCount * 3; i++)
+                coeffs[i] = Double.Parse(contain[i]);
+
             return coeffs;
         }
     }

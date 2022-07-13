@@ -19,6 +19,7 @@ namespace Apr6_SquareEquation.Recorders
             Console.Write("Введите, пожалуйста, коэффициенты:\n");
             for (int i = 0; i < eqCount * 3; i++)
                 coeffs[i] = Convert.ToDouble(Console.ReadLine());
+            
             Console.Write("\n");
 
             return coeffs;

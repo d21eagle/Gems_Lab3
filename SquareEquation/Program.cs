@@ -33,9 +33,9 @@ namespace Apr6_SquareEquation
                             var eqHandler = new EquationHandler(recorder);
                             eqHandler.Handle();
                         }
-                        catch (ArgumentException)
+                        catch (ArgumentException ex)
                         {
-                            Console.WriteLine("Отсутствует описание уравнений!");
+                            Console.WriteLine(ex.Message);
                         }
                         break;
                     
@@ -43,17 +43,21 @@ namespace Apr6_SquareEquation
                         Console.Clear();
                         try
                         {
-                            IRecorder recorder = new FileRecorder(@"D:\output.txt");
+                            IRecorder recorder = new FileRecorder(@"D:\input.txt");
                             var eqHandler = new EquationHandler(recorder);
                             eqHandler.Handle();
                         }
-                        catch (FileNotFoundException)
+                        catch (FileNotFoundException ex)
                         {
-                            Console.WriteLine("Файл не найден!");
+                            Console.WriteLine($"\nПроизошла ошибка: {ex.Message}");
                         }
-                        catch (ArgumentException)
+                        catch (ArgumentException ex)
                         {
-                            Console.WriteLine("Отсутствует описание уравнений!");
+                            Console.WriteLine(ex.Message);
+                        }
+                        catch (IndexOutOfRangeException)
+                        {
+                            Console.WriteLine("Нет описания уравнений!");
                         }
                         break;
                 }
