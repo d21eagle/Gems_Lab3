@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CoffeeMachineUI/1.0.0": {
+        "dependencies": {
+          "CoffeeMachineModel": "1.0.0"
+        },
+        "runtime": {
+          "CoffeeMachineUI.dll": {}
+        }
+      },
+      "CoffeeMachineModel/1.0.0": {
+        "runtime": {
+          "CoffeeMachineModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoffeeMachineUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoffeeMachineModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
