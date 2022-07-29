@@ -31,130 +31,142 @@ public static class CoffeeMachine
 
         if (recipe == RecipeName.Cappuccino)
             recipes = _recipes[RecipeName.Cappuccino];
-
-        try
-        {
-            water = _waterContainer.GetResource(recipes.Water);
-        }
-        catch (ArgumentException)
-        {
-            do
+       
+        while(true)
+            try
             {
-                Console.WriteLine("\nНекорректное количество воды!");
-                Console.Write("Введите количество ресурса:\n");
-                water = Convert.ToInt32(Console.ReadLine());
-            } while (water + _waterContainer.GetValue() < recipes.Water || 
-                     water + _waterContainer.GetValue() > _waterContainer.GetCapacity());
-
-            _waterContainer.LoadResource(water);
-            water = _waterContainer.GetResource(recipes.Water);
-        }
-
-        try
-        {
-            milk = _milkContainer.GetResource(recipes.Milk);
-        }
-        catch (ArgumentException)
-        {
-            do
+                water = _waterContainer.GetResource(recipes.Water);
+                break;
+            }
+            catch (ArgumentException)
             {
-                Console.WriteLine("\nНекорректное количество молока!");
-                Console.Write("Введите количество ресурса:\n");
-                milk = Convert.ToInt32(Console.ReadLine());
-            } while (milk + _milkContainer.GetValue() < recipes.Milk || 
-                     milk + _milkContainer.GetValue() > _milkContainer.GetCapacity());
-            
-            _milkContainer.LoadResource(milk);
-            milk = _milkContainer.GetResource(recipes.Milk);
-        }
+                Console.WriteLine("\nНедостаточно воды в контейнере!");
+                while (true)
+                    try
+                    {
+                        Console.Write("Введите количество воды:\n");
+                        water = int.Parse(Console.ReadLine()!);
+                        if (water + _waterContainer.GetValue() >= recipes.Water) 
+                            _waterContainer.LoadResource(water);
+                        break;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("\nКонтейнер предназначен только для воды!");
+                    }
+                    catch (ArgumentException)
+                    {
+                        Console.WriteLine("\nСлишком много воды в контейнере!");
+                    }
+            }
+
+        while(true)
+            try
+            {
+                milk = _milkContainer.GetResource(recipes.Milk);
+                break;
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("\nНедостаточно молока в контейнере!");
+                while (true)
+                    try
+                    {
+                        Console.Write("Введите количество молока:\n");
+                        milk = int.Parse(Console.ReadLine()!);
+                        if (milk + _milkContainer.GetValue() >= recipes.Milk) 
+                            _milkContainer.LoadResource(milk);
+                        break;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("\nКонтейнер предназначен только для молока!");
+                    }
+                    catch (ArgumentException)
+                    {
+                        Console.WriteLine("\nСлишком много молока в контейнере!");
+                    }
+            }
         
-        try
-        {
-            beans = _beansContainer.GetResource(recipes.Beans);
-        }
-        catch (ArgumentException)
-        {
-            do
+        while(true)
+            try
             {
-                Console.WriteLine("\nНекорректное количество кофейных зёрен!");
-                Console.Write("Введите количество ресурса:\n");
-                beans = Convert.ToInt32(Console.ReadLine());
-            } while (beans + _beansContainer.GetValue() < recipes.Beans || 
-                     beans + _beansContainer.GetValue() > _beansContainer.GetCapacity());
-            
-            _beansContainer.LoadResource(beans);
-            beans = _beansContainer.GetResource(recipes.Beans);
-        }
+                beans = _beansContainer.GetResource(recipes.Beans);
+                break;
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("\nНедостаточно зёрен в контейнере!");
+                while (true)
+                    try
+                    {
+                        Console.Write("Введите количество зёрен:\n");
+                        beans = int.Parse(Console.ReadLine()!);
+                        if (beans + _beansContainer.GetValue() >= recipes.Beans) 
+                            _beansContainer.LoadResource(beans);
+                        break;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("\nКонтейнер предназначен только для зёрен!");
+                    }
+                    catch (ArgumentException)
+                    {
+                        Console.WriteLine("\nСлишком много зёрен в контейнере!");
+                    }
+            }
         
         GroundCoffee grind = _grinderUnit.Grind(beans);
         Coffee coffee = _brewingUnit.Brew(water, milk, grind);
         return coffee;
     }
 
-    public static void LoadWater()
+    public static void LoadByUser(int resNum)
     {
-        int water = 0;
-        do
-        {
-            Console.Write("Введите количество ресурса:\n");
-            water = Convert.ToInt32(Console.ReadLine());
-        } while (water + _waterContainer.GetValue() > _waterContainer.GetCapacity());
-        _waterContainer.LoadResource(water);
-    }
-    
-    public static void LoadMilk()
-    {
-        int milk = 0;
-        do
-        {
-            Console.Write("Введите количество ресурса:\n");
-            milk = Convert.ToInt32(Console.ReadLine());
-        } while (milk + _milkContainer.GetValue() > _milkContainer.GetCapacity());
-        _milkContainer.LoadResource(milk);
-    }
-    
-    public static void LoadBeans()
-    {
-        int beans = 0;
-        do
-        {
-            Console.Write("Введите количество ресурса:\n");
-            beans = Convert.ToInt32(Console.ReadLine());
-        } while (beans + _beansContainer.GetValue() > _beansContainer.GetCapacity());
-        _beansContainer.LoadResource(beans);
+        int value = 0;
+        
+        while(true)
+            try
+            {
+                Console.Write("Введите количество ресурса:\n");
+                value = int.Parse(Console.ReadLine()!);
+                if (resNum == 1) _waterContainer.LoadResource(value);
+                if (resNum == 2) _milkContainer.LoadResource(value);
+                if (resNum == 3) _beansContainer.LoadResource(value);
+                break;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("\nКонтейнер не предназначен для этого ресурса!");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"\n{ex.Message}");
+            }
     }
 
-    public static void GetWater()
+    public static void GetByUser(int resNum)
     {
-        int water = 0;
-        do
-        {
-            Console.Write("Введите количество ресурса:\n");
-            water = Convert.ToInt32(Console.ReadLine());
-        } while (water > _waterContainer.GetValue());
-        _waterContainer.GetResource(water);
-    }
-    
-    public static void GetMilk()
-    {
-        int milk = 0;
-        do
-        {
-            Console.Write("Введите количество ресурса:\n");
-            milk = Convert.ToInt32(Console.ReadLine());
-        } while (milk > _milkContainer.GetValue());
-        _milkContainer.GetResource(milk);
-    }
-    
-    public static void GetBeans()
-    {
-        int beans = 0;
-        do
-        {
-            Console.Write("Введите количество ресурса:\n");
-            beans = Convert.ToInt32(Console.ReadLine());
-        } while (beans > _beansContainer.GetValue());
-        _beansContainer.GetResource(beans);
+        int value = 0;
+        
+        while(true)
+            try
+            {
+                Console.Write("Введите количество ресурса:\n");
+                value = int.Parse(Console.ReadLine()!);
+                if (resNum == 1) _waterContainer.GetResource(value);
+                if (resNum == 2) _milkContainer.GetResource(value);
+                if (resNum == 3) _beansContainer.GetResource(value);
+                break;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("\nКонтейнер не предназначен для этого ресурса!");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"\n{ex.Message}");
+            }
     }
 
     public static string GetWaterLevel()

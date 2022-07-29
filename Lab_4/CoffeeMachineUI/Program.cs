@@ -93,34 +93,33 @@ namespace CoffeeMachineUI
                             {
                                 case 1:
                                     Console.Clear();
-                                    CoffeeMachine.LoadWater();
+                                    CoffeeMachine.LoadByUser(1);
                                     break;
                                 
                                 case 2:
                                     Console.Clear();
-                                    CoffeeMachine.LoadMilk();
+                                    CoffeeMachine.LoadByUser(2);
                                     break;
                                 
                                 case 3:
                                     Console.Clear();
-                                    CoffeeMachine.LoadBeans();
+                                    CoffeeMachine.LoadByUser(3);
                                     break;
                                 
                                 case 4:
                                     Console.Clear();
-                                    CoffeeMachine.GetWater();
+                                    CoffeeMachine.GetByUser(1);
                                     break;
                                 
                                 case 5:
                                     Console.Clear();
-                                    CoffeeMachine.GetMilk();
+                                    CoffeeMachine.GetByUser(2);
                                     break;
                                 
                                 case 6:
                                     Console.Clear();
-                                    CoffeeMachine.GetBeans();
+                                    CoffeeMachine.GetByUser(3);
                                     break;
-                                
                             }
                             
                         } while (tick != 7);
