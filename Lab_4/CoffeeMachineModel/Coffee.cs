@@ -7,8 +7,8 @@ public class Coffee
     public override string ToString()
     {
         return "\nВаш кофе готов!" + "\n" +
-               "Текущий уровень воды: " + RecipeName.Water + " г." + "\n" +
-               "Текущий уровень молока: " + RecipeName.Milk + " г." + "\n" +
-               "Текущий уровень кофейные зёрен: " + RecipeName.Beans + " г." + "\n";
+               "Оставшийся уровень воды: " + RecipeName.Water + " мл." + "\n" +
+               "Оставшийся уровень молока: " + RecipeName.Milk + " мл." + "\n" +
+               "Оставшийся уровень кофейных зёрен: " + RecipeName.Beans + " г.";
     }
 }

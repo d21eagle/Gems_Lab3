@@ -25,7 +25,7 @@ public class Container
     public int GetResource(int value)
     {
         if (value > _value) 
-            throw new ArgumentException("Нельзя извлечь больше, чем осталось!");
+            throw new ArgumentException("Недостаточно ресурсов в контейнере!");
         
         _value -= value;
         return _value;

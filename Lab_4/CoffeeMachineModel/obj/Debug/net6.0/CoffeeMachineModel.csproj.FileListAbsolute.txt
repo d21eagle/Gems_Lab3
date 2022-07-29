@@ -10,3 +10,15 @@ C:\Users\Vlad Ilyashenko\RiderProjects\CoffeeMachine\CoffeeMachineModel\obj\Debu
 C:\Users\Vlad Ilyashenko\RiderProjects\CoffeeMachine\CoffeeMachineModel\obj\Debug\net6.0\refint\CoffeeMachineModel.dll
 C:\Users\Vlad Ilyashenko\RiderProjects\CoffeeMachine\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.pdb
 C:\Users\Vlad Ilyashenko\RiderProjects\CoffeeMachine\CoffeeMachineModel\obj\Debug\net6.0\ref\CoffeeMachineModel.dll
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\bin\Debug\net6.0\CoffeeMachineModel.deps.json
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\bin\Debug\net6.0\CoffeeMachineModel.dll
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\bin\Debug\net6.0\CoffeeMachineModel.pdb
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.csproj.AssemblyReference.cache
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.AssemblyInfoInputs.cache
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.AssemblyInfo.cs
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.csproj.CoreCompileInputs.cache
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.dll
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\refint\CoffeeMachineModel.dll
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\CoffeeMachineModel.pdb
+C:\Users\Vlad Ilyashenko\Desktop\My Repositories\Gems_Labs\Lab_4\CoffeeMachineModel\obj\Debug\net6.0\ref\CoffeeMachineModel.dll

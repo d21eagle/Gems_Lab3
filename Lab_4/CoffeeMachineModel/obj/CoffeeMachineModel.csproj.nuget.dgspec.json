@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\CoffeeMachine\\CoffeeMachineModel\\CoffeeMachineModel.csproj": {}
+    "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel\\CoffeeMachineModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\CoffeeMachine\\CoffeeMachineModel\\CoffeeMachineModel.csproj": {
+    "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel\\CoffeeMachineModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\CoffeeMachine\\CoffeeMachineModel\\CoffeeMachineModel.csproj",
+        "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel\\CoffeeMachineModel.csproj",
         "projectName": "CoffeeMachineModel",
-        "projectPath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\CoffeeMachine\\CoffeeMachineModel\\CoffeeMachineModel.csproj",
+        "projectPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel\\CoffeeMachineModel.csproj",
         "packagesPath": "C:\\Users\\Vlad Ilyashenko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\CoffeeMachine\\CoffeeMachineModel\\obj\\",
+        "outputPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vlad Ilyashenko\\AppData\\Roaming\\NuGet\\NuGet.Config"

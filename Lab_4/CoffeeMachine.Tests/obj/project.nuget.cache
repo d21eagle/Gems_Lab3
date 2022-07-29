@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xRmyXJjGiZ95ECu0E3tmrSdKMOWF5roVVuG9vPUAmLdGfmbNWbuEuF7cQF0oNONvV1/EaMhiT7WvywMXre3oDg==",
+  "dgSpecHash": "2h+lercT6Lz+cM2gxHQSY1ps+nkpVWCUTJI7UOIUQgiW+0ju7Svsjj9qB4ZTEaQ7P5MnRHlyMH2hNsKgvgqSxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\CoffeeMachine\\CoffeeMachine.Tests\\CoffeeMachine.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachine.Tests\\CoffeeMachine.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vlad Ilyashenko\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Vlad Ilyashenko\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
