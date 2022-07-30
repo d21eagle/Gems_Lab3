@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachineModel", "Coffe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachineUI", "CoffeeMachineUI\CoffeeMachineUI.csproj", "{D4E470A9-2530-417C-8548-6B843C30E4B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Tests", "CoffeeMachine.Tests\CoffeeMachine.Tests.csproj", "{9B8189EA-932E-4B80-970D-5C6C5A498B48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachineModel.Tests", "CoffeeMachineModel.Tests\CoffeeMachineModel.Tests.csproj", "{9B8189EA-932E-4B80-970D-5C6C5A498B48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

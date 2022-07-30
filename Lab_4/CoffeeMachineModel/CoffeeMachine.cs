@@ -1,17 +1,17 @@
 ﻿namespace CoffeeMachineModel;
 
-public static class CoffeeMachine
+public class CoffeeMachine
 {
-    private static Dictionary<RecipeName, Recipe> _recipes = null!;
-    private static GrinderUnit _grinderUnit = new GrinderUnit();
-    private static BrewingUnit _brewingUnit = new BrewingUnit();
-    private static Container _waterContainer = new Container(3000);
-    private static Container _milkContainer = new Container(3000);
-    private static Container _beansContainer = new Container(3000);
+    private Dictionary<RecipeName, Recipe> _recipes = null!;
+    private GrinderUnit _grinderUnit = new GrinderUnit();
+    private BrewingUnit _brewingUnit = new BrewingUnit();
+    private Container _waterContainer = new Container(3000);
+    private Container _milkContainer = new Container(3000);
+    private Container _beansContainer = new Container(3000);
     
     public enum RecipeName { Espresso, Filtered, Cappuccino }
 
-    public static Coffee BrewCoffee(RecipeName recipe)
+    public Coffee BrewCoffee(RecipeName recipe)
     {
         int water = 0;
         int milk = 0;
@@ -121,7 +121,7 @@ public static class CoffeeMachine
         return coffee;
     }
 
-    public static void LoadByUser(int resNum)
+    public void LoadByUser(int resNum)
     {
         int value = 0;
         
@@ -145,7 +145,7 @@ public static class CoffeeMachine
             }
     }
 
-    public static void GetByUser(int resNum)
+    public void GetByUser(int resNum)
     {
         int value = 0;
         
@@ -169,18 +169,33 @@ public static class CoffeeMachine
             }
     }
 
-    public static string GetWaterLevel()
+    public string GetWaterLevel()
     {
-        return "\nУровень воды в контейнере: " + _waterContainer.GetValue() + " мл.";
+        return "Уровень воды в контейнере: " + _waterContainer.GetValue() + " мл.";
     }
 
-    public static string GetMilkLevel()
+    public string GetMilkLevel()
     {
-        return "\nУровень молока в контейнере: " + _milkContainer.GetValue() + " мл.";
+        return "Уровень молока в контейнере: " + _milkContainer.GetValue() + " мл.";
     }
 
-    public static string GetBeansLevel()
+    public string GetBeansLevel()
     {
-        return "\nУровень кофейных зёрен в контейнере: " + _beansContainer.GetValue() + " г.";
+        return "Уровень кофейных зёрен в контейнере: " + _beansContainer.GetValue() + " г.";
+    }
+
+    public void SetWaterContainer(Container waterContainer)
+    {
+        _waterContainer = waterContainer;
+    }
+    
+    public void SetMilkContainer(Container milkContainer)
+    {
+        _milkContainer = milkContainer;
+    }
+    
+    public void SetBeansContainer(Container beansContainer)
+    {
+        _beansContainer = beansContainer;
     }
 }

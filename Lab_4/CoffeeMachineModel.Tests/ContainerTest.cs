@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using Container = CoffeeMachineModel.Container;
 
-namespace CoffeeMachine.Tests;
+namespace CoffeeMachineModel.Tests;
 
 public class ContainerTest
 {

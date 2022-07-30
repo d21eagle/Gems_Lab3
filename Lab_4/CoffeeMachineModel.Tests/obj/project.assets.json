@@ -5994,11 +5994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachine.Tests\\CoffeeMachine.Tests.csproj",
-      "projectName": "CoffeeMachine.Tests",
-      "projectPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachine.Tests\\CoffeeMachine.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel.Tests\\CoffeeMachineModel.Tests.csproj",
+      "projectName": "CoffeeMachineModel.Tests",
+      "projectPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel.Tests\\CoffeeMachineModel.Tests.csproj",
       "packagesPath": "C:\\Users\\Vlad Ilyashenko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachine.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_4\\CoffeeMachineModel.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vlad Ilyashenko\\AppData\\Roaming\\NuGet\\NuGet.Config"

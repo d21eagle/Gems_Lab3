@@ -28,7 +28,7 @@ public class Container
             throw new ArgumentException("Недостаточно ресурсов в контейнере!");
         
         _value -= value;
-        return _value;
+        return value;
     }
 
     public int GetCapacity() { return _capacity; }
