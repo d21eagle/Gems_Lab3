@@ -11,6 +11,45 @@ public class CoffeeMachine
     
     public enum RecipeName { Espresso, Filtered, Cappuccino }
 
+    public int ContainMachine(Container resourceContainer, int recipeResource)
+    {
+        string resMark = "";
+        if (resourceContainer == _waterContainer) resMark = "воды";
+        if (resourceContainer == _milkContainer) resMark = "молока";
+        if (resourceContainer == _beansContainer) resMark = "зёрен";
+        
+        int resource = 0;
+        while(true)
+            try
+            {
+                resource = resourceContainer.GetResource(recipeResource);
+                break;
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine($"\nНедостаточно {resMark} в контейнере!");
+                while (true)
+                    try
+                    {
+                        Console.Write("Введите количество ресурса:\n");
+                        resource = int.Parse(Console.ReadLine()!);
+                        if (resource + resourceContainer.GetValue() >= recipeResource) 
+                            resourceContainer.LoadResource(resource);
+                        break;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine($"\nКонтейнер предназначен только для {resMark}!");
+                    }
+                    catch (ArgumentException)
+                    {
+                        Console.WriteLine($"\nСлишком много {resMark} в контейнере!");
+                    }
+            }
+
+        return resource;
+    }
+
     public Coffee BrewCoffee(RecipeName recipe)
     {
         int water = 0;
@@ -31,90 +70,10 @@ public class CoffeeMachine
 
         if (recipe == RecipeName.Cappuccino)
             recipes = _recipes[RecipeName.Cappuccino];
-       
-        while(true)
-            try
-            {
-                water = _waterContainer.GetResource(recipes.Water);
-                break;
-            }
-            catch (ArgumentException)
-            {
-                Console.WriteLine("\nНедостаточно воды в контейнере!");
-                while (true)
-                    try
-                    {
-                        Console.Write("Введите количество воды:\n");
-                        water = int.Parse(Console.ReadLine()!);
-                        if (water + _waterContainer.GetValue() >= recipes.Water) 
-                            _waterContainer.LoadResource(water);
-                        break;
-                    }
-                    catch (FormatException)
-                    {
-                        Console.WriteLine("\nКонтейнер предназначен только для воды!");
-                    }
-                    catch (ArgumentException)
-                    {
-                        Console.WriteLine("\nСлишком много воды в контейнере!");
-                    }
-            }
 
-        while(true)
-            try
-            {
-                milk = _milkContainer.GetResource(recipes.Milk);
-                break;
-            }
-            catch (ArgumentException)
-            {
-                Console.WriteLine("\nНедостаточно молока в контейнере!");
-                while (true)
-                    try
-                    {
-                        Console.Write("Введите количество молока:\n");
-                        milk = int.Parse(Console.ReadLine()!);
-                        if (milk + _milkContainer.GetValue() >= recipes.Milk) 
-                            _milkContainer.LoadResource(milk);
-                        break;
-                    }
-                    catch (FormatException)
-                    {
-                        Console.WriteLine("\nКонтейнер предназначен только для молока!");
-                    }
-                    catch (ArgumentException)
-                    {
-                        Console.WriteLine("\nСлишком много молока в контейнере!");
-                    }
-            }
-        
-        while(true)
-            try
-            {
-                beans = _beansContainer.GetResource(recipes.Beans);
-                break;
-            }
-            catch (ArgumentException)
-            {
-                Console.WriteLine("\nНедостаточно зёрен в контейнере!");
-                while (true)
-                    try
-                    {
-                        Console.Write("Введите количество зёрен:\n");
-                        beans = int.Parse(Console.ReadLine()!);
-                        if (beans + _beansContainer.GetValue() >= recipes.Beans) 
-                            _beansContainer.LoadResource(beans);
-                        break;
-                    }
-                    catch (FormatException)
-                    {
-                        Console.WriteLine("\nКонтейнер предназначен только для зёрен!");
-                    }
-                    catch (ArgumentException)
-                    {
-                        Console.WriteLine("\nСлишком много зёрен в контейнере!");
-                    }
-            }
+        water = ContainMachine(_waterContainer, recipes.Water);
+        milk = ContainMachine(_milkContainer, recipes.Milk);
+        beans = ContainMachine(_beansContainer, recipes.Beans);
         
         GroundCoffee grind = _grinderUnit.Grind(beans);
         Coffee coffee = _brewingUnit.Brew(water, milk, grind);
