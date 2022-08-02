@@ -15,6 +15,8 @@ namespace Apr6_SquareEquation
     
         static void Menu()
         {
+            IRecorder recorder0 = new ConsoleRecorder(); 
+            IRecorder recorder1 = new FileRecorder(@"D:\input.txt");
             int menu;
             do
             {
@@ -29,8 +31,7 @@ namespace Apr6_SquareEquation
                         Console.Clear();
                         try
                         {
-                            IRecorder recorder = new ConsoleRecorder(); 
-                            var eqHandler = new EquationHandler(recorder);
+                            var eqHandler = new EquationHandler(recorder0);
                             eqHandler.Handle();
                         }
                         catch (ArgumentException ex)
@@ -47,8 +48,7 @@ namespace Apr6_SquareEquation
                         Console.Clear();
                         try
                         {
-                            IRecorder recorder = new FileRecorder(@"D:\input.txt");
-                            var eqHandler = new EquationHandler(recorder);
+                            var eqHandler = new EquationHandler(recorder1);
                             eqHandler.Handle();
                         }
                         catch (FileNotFoundException ex)

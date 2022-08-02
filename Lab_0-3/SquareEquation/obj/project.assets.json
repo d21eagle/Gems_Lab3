@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\SquareEquation\\SquareEquation.csproj",
+      "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\SquareEquation\\SquareEquation.csproj",
       "projectName": "SquareEquation",
-      "projectPath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\SquareEquation\\SquareEquation.csproj",
+      "projectPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\SquareEquation\\SquareEquation.csproj",
       "packagesPath": "C:\\Users\\Vlad Ilyashenko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\SquareEquation\\obj\\",
+      "outputPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\SquareEquation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vlad Ilyashenko\\AppData\\Roaming\\NuGet\\NuGet.Config"

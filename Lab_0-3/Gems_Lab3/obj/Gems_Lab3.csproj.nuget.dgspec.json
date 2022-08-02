@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\Gems_Lab3\\Gems_Lab3.csproj": {}
+    "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\Gems_Lab3\\Gems_Lab3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\Gems_Lab3\\Gems_Lab3.csproj": {
+    "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\Gems_Lab3\\Gems_Lab3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\Gems_Lab3\\Gems_Lab3.csproj",
+        "projectUniqueName": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\Gems_Lab3\\Gems_Lab3.csproj",
         "projectName": "Gems_Lab3",
-        "projectPath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\Gems_Lab3\\Gems_Lab3.csproj",
+        "projectPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\Gems_Lab3\\Gems_Lab3.csproj",
         "packagesPath": "C:\\Users\\Vlad Ilyashenko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlad Ilyashenko\\RiderProjects\\Gems_Lab3\\Gems_Lab3\\obj\\",
+        "outputPath": "C:\\Users\\Vlad Ilyashenko\\Desktop\\My Repositories\\Gems_Labs\\Lab_0-3\\Gems_Lab3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vlad Ilyashenko\\AppData\\Roaming\\NuGet\\NuGet.Config"
