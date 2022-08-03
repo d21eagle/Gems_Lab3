@@ -2,33 +2,26 @@
 
 public class CheckPointStatistics
 {
-    private int CarsCount; // количество легковушек
-    private int TrucksCount; // количество грузовиков
-    private int BusesCount; // количество автобусов
-    private int SpeedLimitBreakersCount; // количество нарушителей скоростного режима
-    private int HijackersCount; // количество угонщиков
-    private double AverageSpeed; // средняя скорость
+    public int CarsCount { get; set; } 
+    public int TrucksCount { get; set; } 
+    public int BusesCount { get; set; } 
+    public int SpeedLimitBreakersCount { get; set; } 
+    public int CarsJackersCount { get; set; }
+    public double AverageSpeed { get; set; }
 
-    public CheckPointStatistics(int carsCount, int trucksCount, int busesCount, int speedLimitBreakersCount,
-            int hijackersCount, double averageSpeed)
+    public void AverageSpeedCount()
     {
-        CarsCount = carsCount;
-        TrucksCount = trucksCount;
-        BusesCount = busesCount;
-        SpeedLimitBreakersCount = speedLimitBreakersCount;
-        HijackersCount = hijackersCount;
-        AverageSpeed = averageSpeed;
-    }
-
-    public override string ToString()
-    {
-        return "\nСтатистика: \n" +
-               "Количество легковых машин: " + CarsCount + ";\n" +
-               "Количество грузовых машин: " + TrucksCount + ";\n" +
-               "Количество автобусов: " + BusesCount + ";\n" +
-               "Количество нарушителей скоростного режима: " + SpeedLimitBreakersCount + ";\n" +
-               "Количество угонщиков: " + HijackersCount + ";\n" +
-               "Средняя скорость автомобилей: " + AverageSpeed + ";\n";
+        int scoreCount = CarsCount + TrucksCount + BusesCount;
+        double avSpeed = AverageSpeed / scoreCount;
+        AverageSpeed = Math.Round(avSpeed);
     }
     
+    public override string ToString() =>
+        "\nСтатистика: \n" +
+        "Количество легковых машин: " + CarsCount + ";\n" +
+        "Количество грузовых машин: " + TrucksCount + ";\n" +
+        "Количество автобусов: " + BusesCount + ";\n" +
+        "Количество нарушителей скоростного режима: " + SpeedLimitBreakersCount + ";\n" +
+        "Количество угонщиков: " + CarsJackersCount + ";\n" + 
+        "Средняя скорость автомобилей: " + AverageSpeed + ";\n";
 }
